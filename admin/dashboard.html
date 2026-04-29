@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - School Management System</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="auth-logo" style="width: 32px; height: 32px; margin: 0; border-radius: 8px;">
+                    <i class="ph ph-graduation-cap" style="font-size: 1.25rem;"></i>
+                </div>
+                <span>Sch-MS</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    <i class="ph ph-squares-four"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-users"></i> Students
+                </a>
+                <a href="teachers.html" class="nav-item">
+                    <i class="ph ph-chalkboard-teacher"></i> Teachers
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-books"></i> Classes & Subjects
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph ph-chart-bar"></i> Reports
+                </a>
+                <a href="../index.html" class="nav-item" style="margin-top: auto; color: var(--danger-color);">
+                    <i class="ph ph-sign-out"></i> Logout
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="search-bar"
+                    style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); background: var(--bg-surface-hover); padding: 0.5rem 1rem; border-radius: 999px;">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search students, classes..."
+                        style="border: none; outline: none; background: transparent; font-family: inherit; width: 250px;">
+                </div>
+                <div class="user-profile" style="display: flex; align-items: center; gap: 1rem;">
+                    <i class="ph ph-bell"
+                        style="font-size: 1.25rem; color: var(--text-secondary); cursor: pointer;"></i>
+                    <div
+                        style="width: 36px; height: 36px; border-radius: 50%; background-color: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; font-weight: 600;">
+                        A
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="flex justify-between items-center mb-4">
+                    <h2>Dashboard Overview</h2>
+                    <button class="btn btn-primary"><i class="ph ph-plus" style="margin-right: 0.5rem;"></i> Add
+                        Student</button>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">
+                            <i class="ph ph-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>1,245</h3>
+                            <p>Total Students</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green">
+                            <i class="ph ph-chalkboard-teacher"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>84</h3>
+                            <p>Total Teachers</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon amber">
+                            <i class="ph ph-chalkboard"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>32</h3>
+                            <p>Active Classes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="card">
+                    <h3 class="mb-4">Recent Enrollments</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Student ID</th>
+                                    <th>Name</th>
+                                    <th>Class</th>
+                                    <th>Date Joined</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#STU-001</td>
+                                    <td>Sarah Jenkins</td>
+                                    <td>Grade 10 - Science</td>
+                                    <td>Oct 12, 2026</td>
+                                    <td><span
+                                            style="background: #dcfce3; color: #10b981; padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#STU-002</td>
+                                    <td>Michael Chang</td>
+                                    <td>Grade 8 - Arts</td>
+                                    <td>Oct 12, 2026</td>
+                                    <td><span
+                                            style="background: #dcfce3; color: #10b981; padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">Active</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#STU-003</td>
+                                    <td>Emma Wilson</td>
+                                    <td>Grade 12 - Commerce</td>
+                                    <td>Oct 11, 2026</td>
+                                    <td><span
+                                            style="background: #fef3c7; color: #f59e0b; padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">Pending</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
